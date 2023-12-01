@@ -1,0 +1,17 @@
+:root {
+    --darkestGreen: #024104;
+    --softerDarkGreen:#02780699;
+    --brightGreen: #c0f0c2;
+}
+
+.addBtn{
+    background-color: var(--softerDarkGreen);
+}
+
+.inputTag{
+    background-color: var(--brightGreen);
+}
+
+::placeholder{
+    color: var(--darkestGreen);
+}
