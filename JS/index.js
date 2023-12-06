@@ -1,3 +1,5 @@
+// Hi. I edited my code after submission since there were a bunch of things I 
+// wanted to add and correct. I understand this counts as late submission.
 // toDoItem input tag
 let txtInput = document.querySelector('[data-input]');
 // checking if toDoItem has more than 3 characters. If not, error p-tag 
@@ -10,17 +12,15 @@ function checkTxtInputValididty(txtInput){
     }
     }
 
-// generating a randomised id number to be used for the toDoItem id
-function randomId(){
-    return Math.random();
-}
+// initializing counter to be used for the ID
+let i = 0
 
 
 function addToDoItem(){
     let itemName = txtInput.value;
     if (checkTxtInputValididty){
         const toDoItem = {
-            id: randomId(),
+            id: ++i,
             name: itemName.toUpperCase()
             dateCreated: new Date().toLocaleDateString(),
         }
